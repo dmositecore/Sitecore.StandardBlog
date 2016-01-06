@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+    Template="/sitecore/templates/System/Layout/Renderings/View rendering"
+      Id="{2DAB6CAB-DFCC-4200-8610-42262588B0F9}">
+  <Fields>
+    <Field Name="Path">
+      /Areas/StandardBlog/Views/Blog/Rendering/list.cshtml
+    </Field>
+
+    <Field Name="Model">
+      {6876E2E6-741C-4CCA-86A3-4C6A1E27C140}
+    </Field>
+
+    <Field Name="Area">
+      StandardBlog
+    </Field>
+
+    <Field Name="Data source">
+      {94A9529B-7625-4535-9807-958E6AD5D3CD}
+    </Field>
+
+  </Fields>
+</Item>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+    Template="/sitecore/templates/System/Templates/Template"
+      Id="{E4C635C0-64E6-40C3-80B3-4381437B3959}">
+  <Fields>
+    <Field Name="__Base template">
+      {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    </Field>
+    <Field Name="__Icon">
+      Applications/16x16/document_plain.png
+    </Field>
+    <Field Name="__Sortorder">
+      100
+    </Field>
+    <Field Name="__Standard Values">
+      {DBFB68E8-0B55-4A4E-AF88-4791E3449363}
+    </Field>
+  </Fields>
+</Item>
+<!--<Template xmlns="http://www.sitecore.net/pathfinder/item"
+  Id="{E6411BF5-E8B8-434B-A7FD-80E3169C198A}"
+  ShortHelp="Blog Author Item."
+  LongHelp="Blog Author Item."
+  Icon="people/16x16/user1.png">
+  <Section Name="Fields">
+    <Field Name="FullName" Id="{8DB1413E-83E9-4000-ACB3-46F262D4A66A}" ShortHelp="Blog author full name." LongHelp="Blog author full name." Type="Single-Line Text" />
+    <Field Name="Biography" Id="{8EDE7E9D-B0E6-4B25-9574-0984D5C521AB}" ShortHelp="Blog author biography." LongHelp="Blog author biography." Type="Rich Text" />
+    <Field Name="TwitterHandle" Id="{3B261021-714C-4776-8668-42343D960C2D}" ShortHelp="Blog author Twitter handle." LongHelp="Blog author Twitter handle." Type="Single-Line Text"/>
+  </Section>
+</Template>-->

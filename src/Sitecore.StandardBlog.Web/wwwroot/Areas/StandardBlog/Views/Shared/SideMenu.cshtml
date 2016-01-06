@@ -1,0 +1,43 @@
+﻿<aside class="aside topic-details hiding-menu">
+    <div class="burger-content">
+        <h2 class="aside-heading">Sidemenu</h2>
+
+        <div class="topic-details-item post-tags">
+
+            @*@Html.Action("RenderTags", "Post", new
+                {
+                    @id = Model.ViewData.PostId,
+                    @viewModel = Model.TagListViewModel,
+                    @title = "Tags"
+                })*@
+
+        </div>
+
+        @*<div class="topic-details-item post-related-posts">
+                <h3>Related posts</h3>
+                <ul>
+                    <li>
+                        <a href="#">Post one</a>
+                    </li>
+                    <li>
+                        <a href="#">Post two</a>
+                    </li>
+                    <li>
+                        <a href="#">Post three</a>
+                    </li>
+                </ul>
+            </div>*@
+
+        <div class="topic-details-item blog-recent-posts">
+
+            @*@Html.Action("RenderMenu", "PostList", new
+                {
+                    @area = "WordBlog",
+                    @id = Model.ViewData.BlogId,
+                    @viewModel = Model.BlogViewModel.PostListViewModel,
+                    @title = "Recent Posts"
+                })*@
+
+        </div>
+    </div>
+</aside>

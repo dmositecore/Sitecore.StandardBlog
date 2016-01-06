@@ -1,0 +1,10 @@
+﻿@using Sitecore.StandardBlog.Web.Areas.StandardPage.ViewModels.Partial
+@{
+    string homeTitle = "Home";
+    string homeUrl = Url.RouteUrl(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, new RouteValueDictionary(new { pathInfo = "" }));
+
+    BreadcrumbViewModel breadcrumbModel = new BreadcrumbViewModel() { };
+    breadcrumbModel.ViewData.Add(new Tuple<string, string>(homeUrl, homeTitle));
+
+}
+@Html.Partial("Breadcrumb", breadcrumbModel)

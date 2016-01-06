@@ -1,0 +1,48 @@
+﻿@using Sitecore.StandardBlog.Kernel.Model
+@model Sitecore.StandardBlog.Kernel.ViewModel.Partial.BlogPostListItemViewModel
+
+@{
+    //string url = Url.Action("Index", "BlogPost", new { @scItemPath = Model.ViewData.Id });
+
+    //string tagString = string.Empty;
+
+    //if (Model.ViewData.Tags != null)
+    //{
+    //    var tags = Model.ViewData.Tags.Where(t => t!= null).Select(t => t.Name).ToList();
+    //    tagString = string.Join(", ", tags);
+    //}
+
+    var authorString = string.Empty;
+    var authorUrl = string.Empty;
+    var author = Model.ViewData.Author;
+    if (author != null)
+    {
+        authorString = author.Name;
+        authorUrl = Url.Action("Index", "Author", new { @scItemPath = author.Id });
+    }
+
+}
+
+<li class="related-item column-item">
+
+    <h3>
+        @Html.ActionLink(Model.ViewData.Title ?? Model.ViewData.Id.ToString("B"),
+            "Index",
+            "BlogPost",
+            new { @scItemPath = Model.ViewData.Id },
+            new { @class = "related-item-title" })
+    </h3>
+    <p class="related-item-info"><span><em>@Html.Encode(Model.ViewData.Abstract)</em></span></p>
+    <p class="related-item-info">@Html.ActionLink("Read more",
+            "Index",
+            "BlogPost",
+            new { @scItemPath = Model.ViewData.Id },
+            new { @class = "" })</p>
+    <p class="related-item-info">@Html.Encode(Model.ViewData.PostDate)</p>
+    <p class="related-item-info">Author: <a href="@Html.AttributeEncode(authorUrl)">@Html.Encode(authorString)</a></p>
+    <p class="related-item-info">Tags: 
+        @foreach (Tag tag in Model.ViewData.Tags.Cast<Tag>())
+        {
+            @Html.ActionLink(tag.Name, "Index", "Tag", new { @scItemPath = tag.Id.ToString() }, new { })
+        }</p>
+</li>

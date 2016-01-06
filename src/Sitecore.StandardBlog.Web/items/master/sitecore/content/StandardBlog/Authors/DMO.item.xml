@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+      Id="{7BC9D883-474A-4CAE-82FB-8341E37F11EB}"
+      Template="/sitecore/templates/StandardBlog/BlogAuthor">
+  <Fields>
+    <Field Name="FullName">
+      David Morrison
+    </Field>
+    <Field Name="Biography">
+      Technical Product Consultant at Sitecore
+    </Field>
+    <Field Name="TwitterHandle">
+      @dmo_sc
+    </Field>
+    <Field Name="__Created">
+      20151222T050000Z
+    </Field> 
+  </Fields>
+</Item>

@@ -1,0 +1,31 @@
+﻿@using Sitecore.StandardBlog.Kernel.ViewModel.Partial
+@model Sitecore.StandardBlog.Kernel.ViewModel.Partial.BlogListViewModel
+
+@if (Model.ViewModel == null)
+{
+    return;
+}
+
+
+<section class="choose-product clearfix" fancy-layout>
+    <h2 class="section-heading">Select a blog</h2>
+    <ul>
+        @foreach (BlogListItemViewModel itemViewModel in Model.ViewModel)
+        {
+            var blogViewData = itemViewModel.ViewData;
+            var blogUrl = Url.Action("Index", "Blog", new {@scItemPath = blogViewData.Id});
+            <li class="item">
+                <h4 class="title">
+                    <a href="@blogUrl">
+                        /@Html.Raw(blogViewData.Name)<br/>
+                        @Html.Raw(blogViewData.Title)
+                    </a>
+                </h4>
+                <p class="item-info">
+                    @Html.Raw(blogViewData.Subtitle)
+                </p>
+                <a href="@blogUrl" class="arrow-icon"></a>
+            </li>
+        }
+    </ul>
+</section>

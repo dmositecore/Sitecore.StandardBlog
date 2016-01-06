@@ -1,0 +1,24 @@
+﻿@using Sitecore.Mvc
+@model Sitecore.StandardBlog.Web.Areas.StandardPage.ViewModels.Layout.StandardPageLayoutViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = Model.ViewData.Title;
+}
+
+@*@section Breadcrumb {
+    @Html.Partial("BreadcrumbHome")
+}*@
+
+@Html.Sitecore().Placeholder("banner")
+
+
+<!-- Main Section -->
+<section class="main-content inner-page clearfix">
+
+    @Html.Sitecore().Placeholder("main")
+
+    @*@Html.Action("RenderHome", "BlogList", new { @area = "StandardBlog", @viewModel = Model.BlogListViewModel })*@
+
+</section>

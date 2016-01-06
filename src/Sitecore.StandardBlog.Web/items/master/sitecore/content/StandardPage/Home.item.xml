@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+      Id="{BFE6B9A7-6714-44C3-80B8-24766327B559}"
+      Template="/sitecore/templates/StandardPage/StandardPage">
+  <Fields>
+    <Field Name="Title">
+      Sitecore Standard Mvc Project
+    </Field>
+    <Field Name="Content">
+      An open standard Sitecore Mvc project
+    </Field>
+  </Fields>
+</Item>

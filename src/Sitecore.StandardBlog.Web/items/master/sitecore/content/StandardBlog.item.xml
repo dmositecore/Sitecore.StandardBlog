@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+      Id="{8DA0445F-4757-401D-9E9D-E2F1C4A7A6E0}"
+      Template="/sitecore/templates/Common/Folder">
+</Item>

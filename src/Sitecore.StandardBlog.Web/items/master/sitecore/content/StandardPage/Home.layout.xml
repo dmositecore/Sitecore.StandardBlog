@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Layout xmlns="http://www.sitecore.net/pathfinder/layouts/master">
+  <Device Name="Default" Layout="/sitecore/layout/Layouts/StandardPage/StandardPageLayout">
+    <Rendering RenderingName="{D4821379-2977-4089-A712-237048B4D3A9}" Placeholder="banner" />
+    <Rendering RenderingName="{2DAB6CAB-DFCC-4200-8610-42262588B0F9}" DataSource="{94A9529B-7625-4535-9807-958E6AD5D3CD}" Placeholder="main" />
+  </Device>
+</Layout>

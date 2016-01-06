@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+      Id="{7C5933C6-357E-475C-B9DA-EE0DEB6CE63D}"
+    Template="/sitecore/templates/StandardBlog/Blog">
+  <Fields>
+    <Field Name="Title">
+      David Morrison's Sitecore Blog
+    </Field>
+
+    <Field Name="Subtitle">
+      This is the first blog by David Morrison
+    </Field>
+
+    <Field Name="Authors">
+      {7BC9D883-474A-4CAE-82FB-8341E37F11EB}
+    </Field>
+
+  </Fields>
+</Item>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+    Template="/sitecore/templates/StandardBlog/BlogPostComment">
+  <Fields>
+    <Field Name="CommentAuthor">
+      @dmo_sc
+    </Field>
+    <Field Name="CommentDate">
+      20151222T202200Z
+    </Field>
+    <Field Name="CommentBody">
+      This is the first comment
+    </Field>
+  </Fields>
+</Item>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+    Template="/sitecore/templates/System/Templates/Template"
+      Id="{C7ECD6D6-5CD7-4851-BB97-6E48F3DAEBFA}">
+  <Fields>
+    <Field Name="__Base template">
+      {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    </Field>
+    <Field Name="__Icon">
+      people/16x16/users1.png
+    </Field>
+    <Field Name="__Sortorder">
+      100
+    </Field>
+    <Field Name="__Standard Values">
+      {64BF2512-ACA7-4705-96B7-89E74EC1803D}
+    </Field>
+  </Fields>
+</Item>
+<!--<Template xmlns="http://www.sitecore.net/pathfinder/item"
+  Id="{C7ECD6D6-5CD7-4851-BB97-6E48F3DAEBFA}"
+  ShortHelp="Blog Comment Item."
+  LongHelp="Blog Comment Item."
+  Icon="people/16x16/users1.png">
+  <Section Name="Fields">
+    <Field Name="CommentAuthor" Id="{76C44033-1018-4F19-BD9B-77F958812791}" ShortHelp="Blog comment author." LongHelp="Blog comment author." Type="Single-Line Text" />
+    <Field Name="CommentDate" Id="{0D62404D-E42C-460B-8DA3-301EE4A384EA}" ShortHelp="Blog comment date." LongHelp="Blog comment date." Type="Datetime" />
+    <Field Name="Content" Id="{558B3442-E488-4EF2-88AD-A8A371168B48}" ShortHelp="Blog comment content." LongHelp="Blog comment content." Type="Multi-Line Text" />
+  </Section>
+</Template>-->

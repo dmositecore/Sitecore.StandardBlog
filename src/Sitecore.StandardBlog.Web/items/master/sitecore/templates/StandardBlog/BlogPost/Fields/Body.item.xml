@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+    Template="/sitecore/templates/System/Templates/Template field"
+      Id="{A649DB88-517E-43D0-9017-F18D150AB5F2}">
+  <Fields>
+    <Field Name="Type">
+      Rich Text
+    </Field>
+    <Field Name="__Sortorder">
+      600
+    </Field>
+  </Fields>
+</Item>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+    Template="/sitecore/templates/StandardBlog/BlogPost">
+  <Fields>
+    <Field Name="Title">
+      First Post!
+    </Field>
+    <Field Name="PostDate">
+      20151222T050000Z
+    </Field>
+    <Field Name="Author">
+      {7BC9D883-474A-4CAE-82FB-8341E37F11EB}
+    </Field>
+    <Field Name="Tags">
+      {15BF6690-7234-4C43-9B3B-CBCE1BBF56A8}
+    </Field>
+    <Field Name="Abstract" Value="This is a test of the emergency web broadcasting system" />
+    <Field Name="Body" Value="&lt;strong&gt;If this had been an actual emergency it would already be too late&lt;/strong&gt;" />
+  </Fields>
+</Item>

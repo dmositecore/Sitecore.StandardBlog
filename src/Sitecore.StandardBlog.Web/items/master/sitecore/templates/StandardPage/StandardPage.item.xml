@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+    Template="/sitecore/templates/System/Templates/Template"
+      Id="{BC8AE07C-9B3D-57D5-CB1F-5E01C4584C78}">
+  <Fields>
+    <Field Name="__Base template">
+      {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    </Field>
+    <Field Name="__Icon">
+      Applications/16x16/document_plain.png
+    </Field>
+    <Field Name="__Sortorder">
+      100
+    </Field>
+    <Field Name="__Standard Values">
+      {49C177B8-EFA2-4D4A-A34F-5E44458EAEC3}
+    </Field>
+  </Fields>
+</Item>
+<!--<Template xmlns="http://www.sitecore.net/pathfinder/item"
+  Id="{BC8AE07C-9B3D-57D5-CB1F-5E01C4584C78}"
+  BaseTemplates="/sitecore/templates/System/Templates/Standard template"
+  ShortHelp="Standard Page Item."
+  LongHelp="Standard Page Item."
+  Icon="Applications/16x16/document_plain.png">
+  <Section Name="Fields">
+    <Field Name="Title" ShortHelp="Standard page title." LongHelp="Standard page title." Type="Single-Line Text" />
+    <Field Name="Content" ShortHelp="Standard page content." LongHelp="Standard page content." Type="Rich Text" />
+  </Section>
+</Template>-->

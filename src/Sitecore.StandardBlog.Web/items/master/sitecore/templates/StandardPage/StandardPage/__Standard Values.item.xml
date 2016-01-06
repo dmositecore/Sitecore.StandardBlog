@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+    Template="/sitecore/templates/StandardPage/StandardPage"
+      Id="{49C177B8-EFA2-4D4A-A34F-5E44458EAEC3}">
+  <Fields>
+    <Field Name="Title">
+    </Field>
+  </Fields>
+</Item>

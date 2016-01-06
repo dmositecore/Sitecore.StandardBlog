@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+    Template="/sitecore/templates/System/Templates/Template field"
+      Id="{81655FA5-9865-4B04-86FD-A3CBE0E92C3E}">
+  <Fields>
+    <Field Name="Type">
+      Droplink
+    </Field>
+    <Field Name="Source">
+      {63F0399B-FF26-41E2-822A-C32D48931B25}
+    </Field>
+    <Field Name="__Sortorder">
+      300
+    </Field>
+  </Fields>
+</Item>

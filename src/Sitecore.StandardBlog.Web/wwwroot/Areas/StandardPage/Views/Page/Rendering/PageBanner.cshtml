@@ -1,0 +1,10 @@
+﻿@using Sitecore.StandardBlog.Web.Areas.StandardPage.Models
+@using Sitecore.StandardBlog.Web.Areas.StandardPage.ViewModels.Partial
+@model Sitecore.StandardBlog.Web.Areas.StandardPage.ViewModels.Rendering.PageBannerRenderingModel
+
+@Html.Action("PageBanner", "Page", new
+{
+    @scItemPath = Model.ViewData.ID.ToString(),
+})
+
+

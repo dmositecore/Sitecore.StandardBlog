@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+    Template="/sitecore/templates/System/Templates/Template field"
+      Id="{AE024939-93F9-41E3-B901-31CBA398C786}">
+  <Fields>
+    <Field Name="Type">
+      Multilist
+    </Field>
+    <Field Name="Source">
+      {B175C1C2-B8CA-4E39-97C6-8198816D21E2}
+    </Field>
+    <Field Name="__Sortorder">
+      400
+    </Field>
+  </Fields>
+</Item>

@@ -1,0 +1,1 @@
+@"C:\Sitecore\Pathfinder\scc.exe" %*

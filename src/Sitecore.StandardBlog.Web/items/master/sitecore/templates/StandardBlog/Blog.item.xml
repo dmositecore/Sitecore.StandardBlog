@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+    Template="/sitecore/templates/System/Templates/Template"
+      Id="{6858BEDF-3CDF-4DE2-917C-773D48531C18}">
+  <Fields>
+    <Field Name="__Base template">
+      {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    </Field>
+    <Field Name="__Icon">
+      People/16x16/books.png
+    </Field>
+    <Field Name="__Sortorder">
+      100
+    </Field>
+    <Field Name="__Standard Values">
+      {4E9EFBE3-C5D1-476D-8B6F-276818DA2CE2}
+    </Field>
+  </Fields>
+</Item>
+<!--<Template xmlns="http://www.sitecore.net/pathfinder/item"
+    Id="{6858BEDF-3CDF-4DE2-917C-773D48531C18}"
+    ShortHelp="Blog Root Item."
+    LongHelp="Blog Root Item."
+    Icon="People/16x16/books.png">
+  <Section Name="Fields">
+    <Field Name="Title" Id="{4E85F56B-471F-4D45-8F89-FEFD68404A53}" ShortHelp="Blog title." LongHelp="Blog title." Type="Single-Line Text" />
+    <Field Name="Subtitle" Id="{9CDD7100-200B-4E9F-A549-F3DA4D506ED9}" ShortHelp="Blog subtitle." LongHelp="Blog subtitle." Type="Single-Line Text" />
+    <Field Name="LogoImage" Id="{D9CF1F46-5FEB-44D3-8ABE-55A6CBB92427}" ShortHelp="Blog logo image." LongHelp="Blog logo image." Type="Image" />
+    <Field Name="Authors" Id="{53C3FAD0-6EC9-4D3B-B8E4-09C49C84B8D7}" ShortHelp="Blog authors." LongHelp="Blog authors and contributors." Type="Multilist" Source="{63F0399B-FF26-41E2-822A-C32D48931B25}" />
+  </Section>
+</Template>-->

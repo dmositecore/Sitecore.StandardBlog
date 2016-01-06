@@ -1,0 +1,24 @@
+﻿@using Sitecore.StandardBlog.Kernel.ViewModel.Partial
+@model BlogPostListViewModel
+
+@if (Model.ViewModel == null)
+{
+    return;
+}
+@{
+    int count = Model.ViewModel.Count();
+}
+<h2 class="related-items-title">Posts</h2>
+
+<ul class="">
+ 
+    @foreach (BlogPostListItemViewModel post in Model.ViewModel)
+    {
+        @Html.Action("ListItem", "BlogPost", new
+           {
+               @scItemPath = post.ViewData.Id,
+               @viewModel = post
+           })
+    }
+
+</ul>

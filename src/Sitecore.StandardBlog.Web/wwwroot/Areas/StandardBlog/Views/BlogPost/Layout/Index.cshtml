@@ -1,0 +1,69 @@
+﻿@using Sitecore.Mvc.Configuration
+@using Sitecore.StandardBlog.Kernel.Model
+@using Sitecore.StandardBlog.Kernel.ViewModel.Layout
+@using Sitecore.StandardBlog.Web.Areas.StandardPage.ViewModels.Partial
+
+@model BlogPostLayoutViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = string.Concat("Post - ", Model.BlogPostViewModel.ViewData.Title);
+
+    string homeTitle = "Home";
+    string blogTitle = Model.BlogPostViewModel.BlogViewModel.ViewData.Name;
+
+    var authorActionUrl = Url.Action("Index", "Author", new { @scItemPath = Model.BlogPostViewModel.ViewData.Author.Id.ToString() });
+    string homeUrl = Url.RouteUrl(MvcSettings.SitecoreRouteName, new RouteValueDictionary(new { pathInfo = "" }));
+    string blogUrl = Url.Action("Index", "Blog", new { @scItemPath = Model.BlogPostViewModel.BlogViewModel.ViewData.Id });
+
+    BreadcrumbViewModel breadcrumbModel = new BreadcrumbViewModel() { };
+    breadcrumbModel.ViewData.Add(new Tuple<string, string>(homeUrl, homeTitle));
+    breadcrumbModel.ViewData.Add(new Tuple<string, string>(blogUrl, blogTitle));
+
+}
+
+@section Breadcrumb {
+    @Html.Partial("Breadcrumb", breadcrumbModel)
+}
+
+
+<article class="panel-section topic-page">
+    <section class="topic-wrapper inner-content">
+        <a href="" class="print-icon" onclick="window.print()"></a>
+
+        <section class="topic-section">
+            <div class="topic-head content-head">
+                <h1 class="topic-title">
+                    /@Html.Raw(Model.BlogPostViewModel.BlogViewModel.ViewData.Name) <br/>
+                    @Html.Raw(Model.BlogPostViewModel.ViewData.Title)
+                </h1>
+            </div>
+            <div class="topic-content">
+                <p>
+                    Blog: @Html.ActionLink(
+                        string.Concat("", Model.BlogPostViewModel.BlogViewModel.ViewData.Title),
+                        "Index",
+                        "Blog",
+                        new { @scItemPath = Model.BlogPostViewModel.BlogViewModel.ViewData.Id },
+                        new { @class = "" })
+                </p>
+                <p>Date: @Html.Encode(Model.BlogPostViewModel.ViewData.PostDate)</p>
+                <p>Author: <a href="@Html.AttributeEncode(authorActionUrl)">@Html.Encode(Model.BlogPostViewModel.ViewData.Author.Name)</a></p>
+                <p>Tags:
+                    @foreach (Tag tag in Model.BlogPostViewModel.ViewData.Tags.Cast<Tag>())
+                    {
+                        @Html.ActionLink( tag.Name, "Index", "Tag", new { @scItemPath = tag.Id.ToString()}, new {})
+                    }
+                </p>
+                <p><em>@Html.Raw(Model.BlogPostViewModel.ViewData.Abstract)</em></p>
+                <p>@Html.Raw(Model.BlogPostViewModel.ViewData.Body)</p>
+            </div>
+        </section>
+
+    </section>
+
+    @Html.Partial("SideMenu")
+
+</article>
+

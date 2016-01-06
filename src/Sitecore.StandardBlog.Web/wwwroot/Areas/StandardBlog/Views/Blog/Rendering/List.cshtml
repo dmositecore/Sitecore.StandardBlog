@@ -1,0 +1,6 @@
+﻿@model Sitecore.StandardBlog.Kernel.ViewModel.Rendering.BlogListRenderingModel
+    
+@Html.Action("List", "Blog", new
+{
+    @scItemPath = Model.ViewData.ID.ToString()
+})

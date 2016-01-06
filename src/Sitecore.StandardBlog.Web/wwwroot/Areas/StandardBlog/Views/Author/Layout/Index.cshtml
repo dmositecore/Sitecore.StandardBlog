@@ -1,0 +1,69 @@
+﻿@using Sitecore.Mvc.Configuration
+@using Sitecore.StandardBlog.Kernel.ViewModel.Layout
+@using Sitecore.StandardBlog.Web.Areas.StandardPage.ViewModels.Partial
+
+@model AuthorLayoutViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = string.Concat("Author - ", Model.ViewModel.ViewData.Name);
+
+    string homeTitle = "Home";
+
+    /*Model.BlogPostViewModel.ViewData.Author.Id*/
+    string homeUrl = Url.RouteUrl(MvcSettings.SitecoreRouteName, new RouteValueDictionary(new { pathInfo = "" }));
+
+    BreadcrumbViewModel breadcrumbModel = new BreadcrumbViewModel() { };
+    breadcrumbModel.ViewData.Add(new Tuple<string, string>(homeUrl, homeTitle));
+
+}
+
+@section Breadcrumb {
+    @Html.Partial("Breadcrumb", breadcrumbModel)
+}
+
+
+<article class="panel-section topic-page">
+    <section class="topic-wrapper inner-content">
+        <a href="" class="print-icon" onclick="window.print()"></a>
+
+        <section class="topic-section">
+            <div class="topic-head content-head">
+                <h1 class="topic-title">
+                    /@Html.Raw(Model.ViewModel.ViewData.Name)
+                </h1>
+               
+            </div>
+            <div class="topic-content">
+                <p>
+                    Full Name: @Html.Raw(Model.ViewModel.ViewData.FullName)
+                </p>
+                @if (Model.ViewModel.ViewData.CreatedDate.HasValue)
+                {
+                    string contributionSinceYear = Model.ViewModel.ViewData.CreatedDate.Value.Year.ToString();
+                    <p>
+                        <em>Contributor since: @Html.Encode(contributionSinceYear)</em>
+                    </p>
+                }
+                <p>
+                    Twitter: @Html.Raw(Model.ViewModel.ViewData.TwitterHandle)
+                </p>
+                <p>
+                    Biography: <br/>
+                    @Html.Raw(Model.ViewModel.ViewData.Biography)
+                </p>
+                <p>
+                    Profile image: <br />
+                    <img src="@Html.AttributeEncode(Model.ViewModel.ViewData.ProfileImageUrl)"/>
+                </p>
+
+            </div>
+        </section>
+
+    </section>
+
+    @Html.Partial("SideMenu")
+
+</article>
+

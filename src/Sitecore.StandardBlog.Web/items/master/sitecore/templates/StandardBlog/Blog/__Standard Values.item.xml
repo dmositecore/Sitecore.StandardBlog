@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+    Template="/sitecore/templates/StandardBlog/Blog"
+      Id="{4E9EFBE3-C5D1-476D-8B6F-276818DA2CE2}">
+  <Fields>
+    <Field Name="Title">
+      
+    </Field>
+
+    <Field Name="Subtitle">
+      
+    </Field>
+
+    <Field Name="Authors">
+      
+    </Field>
+    
+  </Fields>
+  
+</Item>

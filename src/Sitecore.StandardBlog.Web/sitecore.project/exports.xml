@@ -1,0 +1,241 @@
+<Exports>
+  <Template Id="{E6411BF5-E8B8-434B-A7FD-80E3169C198A}" Database="master" Name="Author" Path="/sitecore/templates/StandardBlog/Author" BaseTemplates="{1930BBEB-7805-471A-A3BE-4858AC7CF696}">
+    <Section Name="__Standard Values" />
+    <Section Name="Fields">
+      <Field Name="Biography" Type="Rich Text" />
+      <Field Name="FullName" Type="Single-Line Text" />
+      <Field Name="TwitterHandle" Type="Single-Line Text" />
+    </Section>
+  </Template>
+  <Template Id="{6858BEDF-3CDF-4DE2-917C-773D48531C18}" Database="master" Name="Blog" Path="/sitecore/templates/StandardBlog/Blog" BaseTemplates="{1930BBEB-7805-471A-A3BE-4858AC7CF696}">
+    <Section Name="__Standard Values" />
+    <Section Name="Fields">
+      <Field Name="Authors" Type="Multilist" />
+      <Field Name="LogoImage" Type="Image" />
+      <Field Name="Subtitle" Type="Single-Line Text" />
+      <Field Name="Tags" Type="Multilist" />
+      <Field Name="Title" Type="Single-Line Text" />
+    </Section>
+  </Template>
+  <Template Id="{A0EA7963-9194-4367-A20A-F3B629035424}" Database="master" Name="BlogPost" Path="/sitecore/templates/StandardBlog/BlogPost" BaseTemplates="{1930BBEB-7805-471A-A3BE-4858AC7CF696}">
+    <Section Name="__Standard Values" />
+    <Section Name="Fields">
+      <Field Name="Abstract" Type="Multi-Line Text" />
+      <Field Name="Author" Type="Droplink" />
+      <Field Name="Body" Type="Rich Text" />
+      <Field Name="PostDate" Type="Datetime" />
+      <Field Name="Tags" Type="Multilist" />
+      <Field Name="Title" Type="Single-Line Text" />
+    </Section>
+  </Template>
+  <Template Id="{C7ECD6D6-5CD7-4851-BB97-6E48F3DAEBFA}" Database="master" Name="BlogPostComment" Path="/sitecore/templates/StandardBlog/BlogPostComment" BaseTemplates="{1930BBEB-7805-471A-A3BE-4858AC7CF696}">
+    <Section Name="__Standard Values" />
+    <Section Name="Fields">
+      <Field Name="CommentAuthor" Type="Single-Line Text" />
+      <Field Name="CommentBody" Type="Multi-Line Text" />
+      <Field Name="CommentDate" Type="Datetime" />
+    </Section>
+  </Template>
+  <Template Id="{E4C635C0-64E6-40C3-80B3-4381437B3959}" Database="master" Name="Tag" Path="/sitecore/templates/StandardBlog/Tag" BaseTemplates="{1930BBEB-7805-471A-A3BE-4858AC7CF696}">
+    <Section Name="__Standard Values" />
+  </Template>
+  <Template Id="{BC8AE07C-9B3D-57D5-CB1F-5E01C4584C78}" Database="master" Name="StandardPage" Path="/sitecore/templates/StandardPage/StandardPage" BaseTemplates="{1930BBEB-7805-471A-A3BE-4858AC7CF696}">
+    <Section Name="__Standard Values" />
+    <Section Name="Fields">
+      <Field Name="Content" Type="Rich Text" />
+      <Field Name="Title" Type="Single-Line Text" />
+    </Section>
+  </Template>
+  <Template Id="{14FF641D-2D97-68AC-6FE1-B67848E55C7A}" Database="master" Name="StandardSiteRoot" Path="/sitecore/templates/StandardPage/StandardSiteRoot" BaseTemplates="{BC8AE07C-9B3D-57D5-CB1F-5E01C4584C78}">
+    <Section Name="__Standard Values" />
+  </Template>
+  <Template Id="{428854D4-4862-B313-CBDF-75A8B747E92D}" Database="master" Name="IItemAdapterModel" Path="/Sitecore/ItemAdapter/Model/IItemAdapterModel" BaseTemplates="">
+    <Section Name="Fields">
+      <Field Name="Id" Type="Single-line Text" />
+      <Field Name="Name" Type="Single-line Text" />
+      <Field Name="TemplateId" Type="Single-line Text" />
+      <Field Name="TemplateName" Type="Single-line Text" />
+      <Field Name="DisplayName" Type="Single-line Text" />
+      <Field Name="Version" Type="Single-line Text" />
+      <Field Name="Language" Type="Single-line Text" />
+      <Field Name="Hidden" Type="Single-line Text" />
+      <Field Name="SortOrder" Type="Single-line Text" />
+      <Field Name="Children" Type="Single-line Text" />
+    </Section>
+  </Template>
+  <Template Id="{F37D311B-C2AF-4FFF-BCF6-4EAED1D1C46C}" Database="master" Name="ItemAdapterModel" Path="/Sitecore/ItemAdapter/Model/ItemAdapterModel" BaseTemplates="">
+    <Section Name="Fields">
+      <Field Name="Id" Type="Single-line Text" />
+      <Field Name="Name" Type="Single-line Text" />
+      <Field Name="TemplateId" Type="Single-line Text" />
+      <Field Name="TemplateName" Type="Single-line Text" />
+      <Field Name="DisplayName" Type="Single-line Text" />
+      <Field Name="Version" Type="Single-line Text" />
+      <Field Name="Language" Type="Single-line Text" />
+      <Field Name="Hidden" Type="Single-line Text" />
+      <Field Name="SortOrder" Type="Single-line Text" />
+      <Field Name="Children" Type="Single-line Text" />
+    </Section>
+  </Template>
+  <Template Id="{D4C4AFF5-FB73-68EF-680F-66BA01808BDD}" Database="master" Name="BlogListRenderingModel" Path="/Sitecore/StandardBlog/Kernel/ViewModel/Rendering/BlogListRenderingModel" BaseTemplates="">
+    <Section Name="Fields">
+      <Field Name="ViewData" Type="Single-line Text" />
+    </Section>
+  </Template>
+  <Template Id="{C6E2C73D-399C-2AE9-DB7A-0E1997DF97C9}" Database="master" Name="AuthorViewModel" Path="/Sitecore/StandardBlog/Kernel/ViewModel/Partial/AuthorViewModel" BaseTemplates="">
+    <Section Name="Fields">
+      <Field Name="ViewData" Type="Single-line Text" />
+    </Section>
+  </Template>
+  <Template Id="{709D2A0C-FEA4-019C-6F58-A4679CC3143C}" Database="master" Name="BlogListItemViewModel" Path="/Sitecore/StandardBlog/Kernel/ViewModel/Partial/BlogListItemViewModel" BaseTemplates="">
+    <Section Name="Fields">
+      <Field Name="ViewData" Type="Single-line Text" />
+    </Section>
+  </Template>
+  <Template Id="{BC2BD3F7-C7DC-BEA8-D87D-C7CCC010F4FE}" Database="master" Name="BlogListViewModel" Path="/Sitecore/StandardBlog/Kernel/ViewModel/Partial/BlogListViewModel" BaseTemplates="">
+    <Section Name="Fields">
+      <Field Name="ViewModel" Type="Single-line Text" />
+    </Section>
+  </Template>
+  <Template Id="{360BB659-BD06-8388-B3BB-56A10ACB11A3}" Database="master" Name="BlogPostListViewModel" Path="/Sitecore/StandardBlog/Kernel/ViewModel/Partial/BlogPostListViewModel" BaseTemplates="">
+    <Section Name="Fields">
+      <Field Name="ViewModel" Type="Single-line Text" />
+    </Section>
+  </Template>
+  <Template Id="{6AAA8504-9A7D-C8BF-38AB-224E09655267}" Database="master" Name="BlogPostListItemViewModel" Path="/Sitecore/StandardBlog/Kernel/ViewModel/Partial/BlogPostListItemViewModel" BaseTemplates="">
+    <Section Name="Fields">
+      <Field Name="ViewData" Type="Single-line Text" />
+    </Section>
+  </Template>
+  <Template Id="{276304F9-EB0D-A249-51D6-750BA5AFECE4}" Database="master" Name="BlogPostViewModel" Path="/Sitecore/StandardBlog/Kernel/ViewModel/Partial/BlogPostViewModel" BaseTemplates="">
+    <Section Name="Fields">
+      <Field Name="ViewData" Type="Single-line Text" />
+      <Field Name="BlogViewModel" Type="Single-line Text" />
+    </Section>
+  </Template>
+  <Template Id="{A0BE92DE-EA16-5413-50A5-9741CD4C3E66}" Database="master" Name="BlogViewModel" Path="/Sitecore/StandardBlog/Kernel/ViewModel/Partial/BlogViewModel" BaseTemplates="">
+    <Section Name="Fields">
+      <Field Name="ViewData" Type="Single-line Text" />
+      <Field Name="BlogPostListViewModel" Type="Single-line Text" />
+    </Section>
+  </Template>
+  <Template Id="{EC7F6092-52EA-5E5C-C85E-E87E400740E3}" Database="master" Name="TagListViewModel" Path="/Sitecore/StandardBlog/Kernel/ViewModel/Partial/TagListViewModel" BaseTemplates="">
+    <Section Name="Fields">
+      <Field Name="ViewModel" Type="Single-line Text" />
+    </Section>
+  </Template>
+  <Template Id="{B29DD73E-4C95-B35B-2F2E-E987DFB835B0}" Database="master" Name="TagViewModel" Path="/Sitecore/StandardBlog/Kernel/ViewModel/Partial/TagViewModel" BaseTemplates="">
+    <Section Name="Fields">
+      <Field Name="ViewData" Type="Single-line Text" />
+    </Section>
+  </Template>
+  <Template Id="{7C904F0D-BA1F-EE79-66CF-127517F4CC95}" Database="master" Name="AuthorLayoutViewModel" Path="/Sitecore/StandardBlog/Kernel/ViewModel/Layout/AuthorLayoutViewModel" BaseTemplates="">
+    <Section Name="Fields">
+      <Field Name="ViewModel" Type="Single-line Text" />
+    </Section>
+  </Template>
+  <Template Id="{42FEEEBE-6925-D351-DA80-8E99E07CEB4B}" Database="master" Name="TagLayoutViewModel" Path="/Sitecore/StandardBlog/Kernel/ViewModel/Layout/TagLayoutViewModel" BaseTemplates="">
+    <Section Name="Fields">
+      <Field Name="ViewModel" Type="Single-line Text" />
+    </Section>
+  </Template>
+  <Template Id="{D3E04DDE-BD8C-BEB9-FB82-53BE51FDCD39}" Database="master" Name="BlogPostLayoutViewModel" Path="/Sitecore/StandardBlog/Kernel/ViewModel/Layout/BlogPostLayoutViewModel" BaseTemplates="">
+    <Section Name="Fields">
+      <Field Name="BlogPostViewModel" Type="Single-line Text" />
+    </Section>
+  </Template>
+  <Template Id="{F07969D7-59B8-A659-0BCE-1B8DD9976489}" Database="master" Name="BlogLayoutViewModel" Path="/Sitecore/StandardBlog/Kernel/ViewModel/Layout/BlogLayoutViewModel" BaseTemplates="">
+    <Section Name="Fields">
+      <Field Name="BlogViewModel" Type="Single-line Text" />
+    </Section>
+  </Template>
+  <Item Id="{7BC9D883-474A-4CAE-82FB-8341E37F11EB}" Database="master" Name="DMO" Path="/sitecore/content/StandardBlog/Authors/DMO" Template="/sitecore/templates/StandardBlog/BlogAuthor" />
+  <Item Id="{0F7E4B22-F98C-D73B-8A74-AA51388AEB33}" Database="master" Name="20151222T202200Z" Path="/sitecore/content/StandardBlog/Blogs/DMO/2015-12/22-FirstPost/20151222T202200Z" Template="/sitecore/templates/StandardBlog/BlogPostComment" />
+  <Item Id="{458F47BC-7E77-DF89-0F48-B0AA863951A8}" Database="master" Name="22-FirstPost" Path="/sitecore/content/StandardBlog/Blogs/DMO/2015-12/22-FirstPost" Template="/sitecore/templates/StandardBlog/BlogPost" />
+  <Item Id="{D12E8C68-9C11-48E6-AEE4-52D2215CD6ED}" Database="master" Name="2015-12" Path="/sitecore/content/StandardBlog/Blogs/DMO/2015-12" Template="/sitecore/templates/Common/Folder" />
+  <Item Id="{7C5933C6-357E-475C-B9DA-EE0DEB6CE63D}" Database="master" Name="DMO" Path="/sitecore/content/StandardBlog/Blogs/DMO" Template="/sitecore/templates/StandardBlog/Blog" />
+  <Item Id="{1F50A44E-7BFE-4EBD-9AE4-7968D7D8D6EA}" Database="master" Name="CMS" Path="/sitecore/content/StandardBlog/Tags/CMS" Template="/sitecore/templates/StandardBlog/Tag" />
+  <Item Id="{15BF6690-7234-4C43-9B3B-CBCE1BBF56A8}" Database="master" Name="MVC" Path="/sitecore/content/StandardBlog/Tags/MVC" Template="/sitecore/templates/StandardBlog/Tag" />
+  <Item Id="{A9D6F700-3FA0-46E2-982F-DCB7546E8107}" Database="master" Name="XDB" Path="/sitecore/content/StandardBlog/Tags/XDB" Template="/sitecore/templates/StandardBlog/Tag" />
+  <Item Id="{63F0399B-FF26-41E2-822A-C32D48931B25}" Database="master" Name="Authors" Path="/sitecore/content/StandardBlog/Authors" Template="/sitecore/templates/StandardBlog/Tag" />
+  <Item Id="{94A9529B-7625-4535-9807-958E6AD5D3CD}" Database="master" Name="Blogs" Path="/sitecore/content/StandardBlog/Blogs" Template="/sitecore/templates/Common/Folder" />
+  <Item Id="{B175C1C2-B8CA-4E39-97C6-8198816D21E2}" Database="master" Name="Tags" Path="/sitecore/content/StandardBlog/Tags" Template="/sitecore/templates/Common/Folder" />
+  <Item Id="{BFE6B9A7-6714-44C3-80B8-24766327B559}" Database="master" Name="Home" Path="/sitecore/content/StandardPage/Home" Template="/sitecore/templates/StandardPage/StandardPage" />
+  <Item Id="{8DA0445F-4757-401D-9E9D-E2F1C4A7A6E0}" Database="master" Name="StandardBlog" Path="/sitecore/content/StandardBlog" Template="/sitecore/templates/Common/Folder" />
+  <Item Id="{13620E64-5F2D-4AD0-8F8E-A17A599F337E}" Database="master" Name="StandardPage" Path="/sitecore/content/StandardPage" Template="/sitecore/templates/Common/Folder" />
+  <Item Id="{847DF583-C5E2-4F2B-891F-FDDDDFF136BA}" Database="master" Name="AuthorLayout" Path="/sitecore/layout/layouts/StandardBlog/AuthorLayout" Template="/sitecore/templates/System/Layout/Layout" />
+  <Item Id="{124D5BBC-2235-48DB-AC8B-0EDFA8DAE188}" Database="master" Name="BlogLayout" Path="/sitecore/layout/layouts/StandardBlog/BlogLayout" Template="/sitecore/templates/System/Layout/Layout" />
+  <Item Id="{F7596882-E43C-4D7F-8301-19E7031F938B}" Database="master" Name="BlogPostLayout" Path="/sitecore/layout/layouts/StandardBlog/BlogPostLayout" Template="/sitecore/templates/System/Layout/Layout" />
+  <Item Id="{6F0FB0D5-8F15-4D45-9237-56F638F384C8}" Database="master" Name="TagLayout" Path="/sitecore/layout/layouts/StandardBlog/TagLayout" Template="/sitecore/templates/System/Layout/Layout" />
+  <Item Id="{1C028E77-2BBB-4C8B-85FF-4139A5CECE1C}" Database="master" Name="StandardPageLayout" Path="/sitecore/layout/layouts/StandardPage/StandardPageLayout" Template="/sitecore/templates/System/Layout/Layout" />
+  <Item Id="{502FD3E4-4612-47E3-AE28-3470DE5DFBA6}" Database="master" Name="AuthorLayoutViewModel" Path="/sitecore/layout/Models/StandardBlog/AuthorLayoutViewModel" Template="/sitecore/templates/System/Layout/Model" />
+  <Item Id="{085F124B-936D-4723-836D-38A7CFD8623A}" Database="master" Name="BlogLayoutViewModel" Path="/sitecore/layout/Models/StandardBlog/BlogLayoutViewModel" Template="/sitecore/templates/System/Layout/Model" />
+  <Item Id="{6876E2E6-741C-4CCA-86A3-4C6A1E27C140}" Database="master" Name="BlogListRenderingModel" Path="/sitecore/layout/Models/StandardBlog/BlogListRenderingModel" Template="/sitecore/templates/System/Layout/Model" />
+  <Item Id="{728B36A4-60B0-4373-AAF6-7A99DE76AED3}" Database="master" Name="BlogPostLayoutViewModel" Path="/sitecore/layout/Models/StandardBlog/BlogPostLayoutViewModel" Template="/sitecore/templates/System/Layout/Model" />
+  <Item Id="{FD65552F-AA23-48E8-B089-D48A2789AB32}" Database="master" Name="TagLayoutViewModel" Path="/sitecore/layout/Models/StandardBlog/TagLayoutViewModel" Template="/sitecore/templates/System/Layout/Model" />
+  <Item Id="{C1772C4B-F5DC-4F9C-B07F-906665C740C5}" Database="master" Name="PageBannerRenderingModel" Path="/sitecore/layout/Models/StandardPage/PageBannerRenderingModel" Template="/sitecore/templates/System/Layout/Model" />
+  <Item Id="{C85A037E-EBF4-4C01-82B0-0A85ADE053D7}" Database="master" Name="StandardPageLayoutViewModel" Path="/sitecore/layout/Models/StandardPage/StandardPageLayoutViewModel" Template="/sitecore/templates/System/Layout/Model" />
+  <Item Id="{2DAB6CAB-DFCC-4200-8610-42262588B0F9}" Database="master" Name="BlogListRendering" Path="/sitecore/layout/renderings/StandardBlog/BlogListRendering" Template="/sitecore/templates/System/Layout/Renderings/View rendering" />
+  <Item Id="{D4821379-2977-4089-A712-237048B4D3A9}" Database="master" Name="PageBannerRendering" Path="/sitecore/layout/renderings/StandardPage/PageBannerRendering" Template="/sitecore/templates/System/Layout/Renderings/View rendering" />
+  <Item Id="{8EDE7E9D-B0E6-4B25-9574-0984D5C521AB}" Database="master" Name="Biography" Path="/sitecore/templates/StandardBlog/Author/Fields/Biography" Template="/sitecore/templates/System/Templates/Template field" />
+  <Item Id="{8DB1413E-83E9-4000-ACB3-46F262D4A66A}" Database="master" Name="FullName" Path="/sitecore/templates/StandardBlog/Author/Fields/FullName" Template="/sitecore/templates/System/Templates/Template field" />
+  <Item Id="{3B261021-714C-4776-8668-42343D960C2D}" Database="master" Name="TwitterHandle" Path="/sitecore/templates/StandardBlog/Author/Fields/TwitterHandle" Template="/sitecore/templates/System/Templates/Template field" />
+  <Item Id="{645EFC65-1202-4444-9F14-E7D59B991BCD}" Database="master" Name="__Standard Values" Path="/sitecore/templates/StandardBlog/Author/__Standard Values" Template="/sitecore/templates/StandardBlog/Author" />
+  <Item Id="{11F3C2AC-7FF0-4F5A-965F-0F020653AD00}" Database="master" Name="Fields" Path="/sitecore/templates/StandardBlog/Author/Fields" Template="/sitecore/templates/System/Templates/Template section" />
+  <Item Id="{53C3FAD0-6EC9-4D3B-B8E4-09C49C84B8D7}" Database="master" Name="Authors" Path="/sitecore/templates/StandardBlog/Blog/Fields/Authors" Template="/sitecore/templates/System/Templates/Template field" />
+  <Item Id="{D9CF1F46-5FEB-44D3-8ABE-55A6CBB92427}" Database="master" Name="LogoImage" Path="/sitecore/templates/StandardBlog/Blog/Fields/LogoImage" Template="/sitecore/templates/System/Templates/Template field" />
+  <Item Id="{9CDD7100-200B-4E9F-A549-F3DA4D506ED9}" Database="master" Name="Subtitle" Path="/sitecore/templates/StandardBlog/Blog/Fields/Subtitle" Template="/sitecore/templates/System/Templates/Template field" />
+  <Item Id="{A97C7C0B-E231-4D39-8E28-244A6CB079BC}" Database="master" Name="Tags" Path="/sitecore/templates/StandardBlog/Blog/Fields/Tags" Template="/sitecore/templates/System/Templates/Template field" />
+  <Item Id="{4E85F56B-471F-4D45-8F89-FEFD68404A53}" Database="master" Name="Title" Path="/sitecore/templates/StandardBlog/Blog/Fields/Title" Template="/sitecore/templates/System/Templates/Template field" />
+  <Item Id="{4E9EFBE3-C5D1-476D-8B6F-276818DA2CE2}" Database="master" Name="__Standard Values" Path="/sitecore/templates/StandardBlog/Blog/__Standard Values" Template="/sitecore/templates/StandardBlog/Blog" />
+  <Item Id="{163F45E0-96EC-40A6-AA0F-0CC218E83738}" Database="master" Name="Fields" Path="/sitecore/templates/StandardBlog/Blog/Fields" Template="/sitecore/templates/System/Templates/Template section" />
+  <Item Id="{DE8D9062-6EEB-45D2-A834-F80B5F663967}" Database="master" Name="Abstract" Path="/sitecore/templates/StandardBlog/BlogPost/Fields/Abstract" Template="/sitecore/templates/System/Templates/Template field" />
+  <Item Id="{81655FA5-9865-4B04-86FD-A3CBE0E92C3E}" Database="master" Name="Author" Path="/sitecore/templates/StandardBlog/BlogPost/Fields/Author" Template="/sitecore/templates/System/Templates/Template field" />
+  <Item Id="{A649DB88-517E-43D0-9017-F18D150AB5F2}" Database="master" Name="Body" Path="/sitecore/templates/StandardBlog/BlogPost/Fields/Body" Template="/sitecore/templates/System/Templates/Template field" />
+  <Item Id="{AF42D8F2-A9D7-42F3-9784-55C6FE89285C}" Database="master" Name="PostDate" Path="/sitecore/templates/StandardBlog/BlogPost/Fields/PostDate" Template="/sitecore/templates/System/Templates/Template field" />
+  <Item Id="{AE024939-93F9-41E3-B901-31CBA398C786}" Database="master" Name="Tags" Path="/sitecore/templates/StandardBlog/BlogPost/Fields/Tags" Template="/sitecore/templates/System/Templates/Template field" />
+  <Item Id="{14BF117B-97EB-4E1C-8BEE-C63065ADEF27}" Database="master" Name="Title" Path="/sitecore/templates/StandardBlog/BlogPost/Fields/Title" Template="/sitecore/templates/System/Templates/Template field" />
+  <Item Id="{67AA32BF-CBC0-481D-876A-1F726B1120E3}" Database="master" Name="__Standard Values" Path="/sitecore/templates/StandardBlog/BlogPost/__Standard Values" Template="/sitecore/templates/StandardBlog/BlogPost" />
+  <Item Id="{88527399-5798-48F6-A762-70CCB072A916}" Database="master" Name="Fields" Path="/sitecore/templates/StandardBlog/BlogPost/Fields" Template="/sitecore/templates/System/Templates/Template section" />
+  <Item Id="{76C44033-1018-4F19-BD9B-77F958812791}" Database="master" Name="CommentAuthor" Path="/sitecore/templates/StandardBlog/BlogPostComment/Fields/CommentAuthor" Template="/sitecore/templates/System/Templates/Template field" />
+  <Item Id="{558B3442-E488-4EF2-88AD-A8A371168B48}" Database="master" Name="CommentBody" Path="/sitecore/templates/StandardBlog/BlogPostComment/Fields/CommentBody" Template="/sitecore/templates/System/Templates/Template field" />
+  <Item Id="{0D62404D-E42C-460B-8DA3-301EE4A384EA}" Database="master" Name="CommentDate" Path="/sitecore/templates/StandardBlog/BlogPostComment/Fields/CommentDate" Template="/sitecore/templates/System/Templates/Template field" />
+  <Item Id="{64BF2512-ACA7-4705-96B7-89E74EC1803D}" Database="master" Name="__Standard Values" Path="/sitecore/templates/StandardBlog/BlogPostComment/__Standard Values" Template="/sitecore/templates/StandardBlog/BlogPostComment" />
+  <Item Id="{AB515727-5B6F-47B7-ADD4-C2EB1CD0DF5F}" Database="master" Name="Fields" Path="/sitecore/templates/StandardBlog/BlogPostComment/Fields" Template="/sitecore/templates/System/Templates/Template section" />
+  <Item Id="{DBFB68E8-0B55-4A4E-AF88-4791E3449363}" Database="master" Name="__Standard Values" Path="/sitecore/templates/StandardBlog/Tag/__Standard Values" Template="/sitecore/templates/StandardBlog/Tag" />
+  <Item Id="{E6411BF5-E8B8-434B-A7FD-80E3169C198A}" Database="master" Name="Author" Path="/sitecore/templates/StandardBlog/Author" Template="/sitecore/templates/System/Templates/Template" />
+  <Item Id="{6858BEDF-3CDF-4DE2-917C-773D48531C18}" Database="master" Name="Blog" Path="/sitecore/templates/StandardBlog/Blog" Template="/sitecore/templates/System/Templates/Template" />
+  <Item Id="{A0EA7963-9194-4367-A20A-F3B629035424}" Database="master" Name="BlogPost" Path="/sitecore/templates/StandardBlog/BlogPost" Template="/sitecore/templates/System/Templates/Template" />
+  <Item Id="{C7ECD6D6-5CD7-4851-BB97-6E48F3DAEBFA}" Database="master" Name="BlogPostComment" Path="/sitecore/templates/StandardBlog/BlogPostComment" Template="/sitecore/templates/System/Templates/Template" />
+  <Item Id="{E4C635C0-64E6-40C3-80B3-4381437B3959}" Database="master" Name="Tag" Path="/sitecore/templates/StandardBlog/Tag" Template="/sitecore/templates/System/Templates/Template" />
+  <Item Id="{51FCC004-7175-467D-889C-8C1924D57079}" Database="master" Name="Content" Path="/sitecore/templates/StandardPage/StandardPage/Fields/Content" Template="/sitecore/templates/System/Templates/Template field" />
+  <Item Id="{C645D89C-E115-4F87-8265-05039EBA2F76}" Database="master" Name="Title" Path="/sitecore/templates/StandardPage/StandardPage/Fields/Title" Template="/sitecore/templates/System/Templates/Template field" />
+  <Item Id="{49C177B8-EFA2-4D4A-A34F-5E44458EAEC3}" Database="master" Name="__Standard Values" Path="/sitecore/templates/StandardPage/StandardPage/__Standard Values" Template="/sitecore/templates/StandardPage/StandardPage" />
+  <Item Id="{A711836B-9921-4021-A438-1C1E7B9D6005}" Database="master" Name="Fields" Path="/sitecore/templates/StandardPage/StandardPage/Fields" Template="/sitecore/templates/System/Templates/Template section" />
+  <Item Id="{004ED6F8-7D57-4ABD-BD36-BA385F821280}" Database="master" Name="__Standard Values" Path="/sitecore/templates/StandardPage/StandardSiteRoot/__Standard Values" Template="/sitecore/templates/StandardPage/StandardSiteRoot" />
+  <Item Id="{BC8AE07C-9B3D-57D5-CB1F-5E01C4584C78}" Database="master" Name="StandardPage" Path="/sitecore/templates/StandardPage/StandardPage" Template="/sitecore/templates/System/Templates/Template" />
+  <Item Id="{14FF641D-2D97-68AC-6FE1-B67848E55C7A}" Database="master" Name="StandardSiteRoot" Path="/sitecore/templates/StandardPage/StandardSiteRoot" Template="/sitecore/templates/System/Templates/Template" />
+  <Item Id="{A97494B1-FC3B-9A8E-EDA7-8CCBD371B96C}" Database="master" Name="Index" Path="//Areas/StandardBlog/Views/Author/Layout/Index" Template="{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}" />
+  <Item Id="{6CC2B657-4AE0-2A30-93B1-52D2B5E97F37}" Database="master" Name="Index" Path="//Areas/StandardBlog/Views/Blog/Layout/Index" Template="{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}" />
+  <Item Id="{356B6BAE-27F7-0B29-8376-0D513B83E938}" Database="master" Name="List" Path="//Areas/StandardBlog/Views/Blog/Rendering/List" Template="{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}" />
+  <Item Id="{1C99328B-BC4B-02FB-CB7E-517E479B2991}" Database="master" Name="List" Path="//Areas/StandardBlog/Views/Blog/List" Template="{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}" />
+  <Item Id="{8924DF93-DE25-8A95-CC01-9D9876FAB15C}" Database="master" Name="Index" Path="//Areas/StandardBlog/Views/BlogPost/Layout/Index" Template="{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}" />
+  <Item Id="{3D755CD6-854A-D8A1-56B5-9B048B0F81C7}" Database="master" Name="List" Path="//Areas/StandardBlog/Views/BlogPost/List" Template="{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}" />
+  <Item Id="{B47462F9-D742-7783-683E-1C39E01D4DDC}" Database="master" Name="ListItem" Path="//Areas/StandardBlog/Views/BlogPost/ListItem" Template="{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}" />
+  <Item Id="{C721D169-A025-C758-443D-0546A9602C9E}" Database="master" Name="BreadcrumbHome" Path="//Areas/StandardBlog/Views/Shared/BreadcrumbHome" Template="{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}" />
+  <Item Id="{D63B18AC-DA79-93A5-AE2F-CA31119EDA52}" Database="master" Name="SideMenu" Path="//Areas/StandardBlog/Views/Shared/SideMenu" Template="{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}" />
+  <Item Id="{E2ECF2CD-5C74-BD46-048C-BE850BE29572}" Database="master" Name="Index" Path="//Areas/StandardBlog/Views/Tag/Layout/Index" Template="{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}" />
+  <Item Id="{BA0C5BAE-D327-8DF1-7CB2-F94BF12A4515}" Database="master" Name="_ViewStart" Path="//Areas/StandardBlog/Views/_ViewStart" Template="{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}" />
+  <Item Id="{24373AA7-8DED-7218-DE38-A9ADF3EF49C7}" Database="master" Name="Index" Path="//Areas/StandardPage/Views/Page/Layout/Index" Template="{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}" />
+  <Item Id="{E26E2B7C-4620-1329-FDA8-11AB0F71FBAD}" Database="master" Name="PageBanner" Path="//Areas/StandardPage/Views/Page/Rendering/PageBanner" Template="{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}" />
+  <Item Id="{EF442F4B-9DCF-25A6-85ED-B1EDCD8DC578}" Database="master" Name="PageBanner" Path="//Areas/StandardPage/Views/Page/PageBanner" Template="{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}" />
+  <Item Id="{6A4A0110-4EB8-FA33-7A5B-DA903DD4E04C}" Database="master" Name="BreadcrumbHome" Path="//Areas/StandardPage/Views/Shared/BreadcrumbHome" Template="{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}" />
+  <Item Id="{81357E42-2DBB-2FB9-E5BF-2990280AE437}" Database="master" Name="icons" Path="//css/icons" Template="/sitecore/templates/System/Media/Unversioned/Image" />
+  <Item Id="{F0680793-ADC3-E4C1-1A8B-F607BD91BF92}" Database="master" Name="finger" Path="//img/media/finger" Template="/sitecore/templates/System/Media/Unversioned/Jpeg" />
+  <Item Id="{1F2D8AF1-D560-CD46-C2B8-46F1561E4EB9}" Database="master" Name="landscape" Path="//img/media/landscape" Template="/sitecore/templates/System/Media/Unversioned/Jpeg" />
+  <Item Id="{D795D526-508B-94D8-80C9-DDFD52941695}" Database="master" Name="logo" Path="//img/logo" Template="/sitecore/templates/System/Media/Unversioned/Image" />
+  <Item Id="{6F80B84C-3CA8-27E5-6F02-B7E510D3AF9D}" Database="master" Name="_Layout" Path="//views/Shared/_Layout" Template="{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}" />
+  <Item Id="{720B5904-A48F-4149-1A76-8D3C1B23E446}" Database="master" Name="Breadcrumb" Path="//views/Shared/Breadcrumb" Template="{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}" />
+  <Item Id="{3E696E9D-F410-53B8-4613-EA596FB2CB16}" Database="master" Name="BurgerMenu" Path="//views/Shared/BurgerMenu" Template="{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}" />
+  <Item Id="{C24C9520-B988-B04B-5655-E87E437CF8E6}" Database="master" Name="FooterLinks" Path="//views/Shared/FooterLinks" Template="{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}" />
+</Exports>

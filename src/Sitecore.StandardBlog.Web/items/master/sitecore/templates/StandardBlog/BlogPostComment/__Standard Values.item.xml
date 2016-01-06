@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+    Template="/sitecore/templates/StandardBlog/BlogPostComment"
+      Id="{64BF2512-ACA7-4705-96B7-89E74EC1803D}">
+  <Fields>
+    <Field Name="CommentAuthor">
+      Anonymous
+    </Field>
+    <Field Name="CommentBody">
+      
+    </Field>
+  </Fields>
+</Item>

@@ -1,0 +1,81 @@
+﻿@using Sitecore.StandardBlog.Kernel.Model
+@model Sitecore.StandardBlog.Kernel.ViewModel.Layout.BlogLayoutViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = "Blog - " + Model.BlogViewModel.ViewData.Name;
+}
+
+@section Breadcrumb {
+        @Html.Partial("BreadcrumbHome")
+}
+
+
+<section class="product landing-page" id="productPage">
+
+    <section class="product-info landing-page-info arrow-bottom">
+
+        <h1 class="landing-page-title">
+            /@Html.Raw(Model.BlogViewModel.ViewData.Name) <br/>
+            @Html.Raw(Model.BlogViewModel.ViewData.Title)
+        </h1>
+
+        <div class="product-description landing-page-description">
+            <em>@Html.Encode(Model.BlogViewModel.ViewData.Subtitle)</em>
+        </div>
+        <p>
+            Contributors: 
+            @foreach (Author author in Model.BlogViewModel.ViewData.Authors.Cast<Author>())
+            {
+                var authorUrl = Url.Action("Index", "Author", new {@scItemPath = author.Id.ToString()});
+                <a href="@Html.AttributeEncode(authorUrl)" style="color: #ffffff">@Html.Encode(author.Name)</a>
+                <br />
+            }
+        </p>
+
+            
+    </section>
+
+    <section class="related-items related-topics clearfix">
+        <div class="landing-page-column-wide">
+
+        @Html.Action("List", "BlogPost", new
+           {
+               @scItemPath = Model.BlogViewModel.ViewData.Id,
+               @viewModel = Model.BlogViewModel.BlogPostListViewModel
+           })
+
+            <a id="moreCategories" class="more-items" href="#">+ More posts</a>
+        </div>
+
+        <div class="landing-page-column">
+
+            <h2 class="related-items-title">Tags</h2>
+
+            <ul class="">
+                
+                @foreach (Tag tag in Model.BlogViewModel.ViewData.Tags.Cast<Tag>())
+                {
+                    var tagUrl = Url.Action("Index", "Tag", new {@scItemPath = tag.Id.ToString()});
+
+                    <li class="related-item column-item">
+                        <h3>
+                            <a class="related-item-title" href="@tagUrl">@Html.Raw(tag.Name)</a>
+                        </h3>
+                        @*<p class="related-item-info"></p>*@
+                    </li>
+                }
+                
+            </ul>
+
+
+
+            <a id="moreCategories" class="more-items" href="#">+ More tags</a>
+        </div>
+
+    </section>
+
+</section>
+
+

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+      Id="{63F0399B-FF26-41E2-822A-C32D48931B25}"
+      Template="/sitecore/templates/StandardBlog/Tag">
+</Item>

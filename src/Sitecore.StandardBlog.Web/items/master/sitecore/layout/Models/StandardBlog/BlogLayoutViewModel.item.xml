@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+      Template="/sitecore/templates/System/Layout/Model"
+      Id="{085F124B-936D-4723-836D-38A7CFD8623A}">
+  <Fields>
+    
+    <Field Name="Model Type">
+      Sitecore.StandardBlog.Kernel.ViewModel.Layout.BlogLayoutViewModel, Sitecore.StandardBlog.Kernel
+    </Field>
+    
+  </Fields>
+</Item>

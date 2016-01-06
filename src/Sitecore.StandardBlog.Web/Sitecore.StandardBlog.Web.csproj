@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{985AF3C8-5D43-4919-A8A0-6563E49386E1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sitecore.StandardBlog.Web</RootNamespace>
+    <AssemblyName>Sitecore.StandardBlog.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.ItemAdapter, Version=0.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.ItemAdapter.0.6.0.0\lib\net45\Sitecore.ItemAdapter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\..\lib\Sitecore\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Mvc">
+      <HintPath>..\..\lib\Sitecore\Sitecore.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gruntfile.js" />
+    <Content Include="items\master\sitecore\content\StandardPage.item.xml" />
+    <Content Include="items\master\sitecore\content\StandardBlog\Authors.item.xml" />
+    <Content Include="items\master\sitecore\content\StandardBlog\Authors\DMO.item.xml" />
+    <Content Include="items\master\sitecore\content\StandardBlog\Blogs.item.xml" />
+    <Content Include="items\master\sitecore\content\StandardBlog\Blogs\DMO\2015-12.item.xml" />
+    <Content Include="items\master\sitecore\content\StandardBlog\Tags.item.xml" />
+    <Content Include="items\master\sitecore\content\StandardBlog\Blogs\DMO.item.xml" />
+    <Content Include="items\master\sitecore\content\StandardBlog\Blogs\DMO\2015-12\22-FirstPost.item.xml" />
+    <Content Include="items\master\sitecore\content\StandardBlog\Blogs\DMO\2015-12\22-FirstPost\20151222T202200Z.item.xml" />
+    <Content Include="items\master\sitecore\content\StandardBlog.item.xml" />
+    <Content Include="items\master\sitecore\content\StandardBlog\Tags\MVC.item.xml" />
+    <Content Include="items\master\sitecore\content\StandardBlog\Tags\XDB.item.xml" />
+    <Content Include="items\master\sitecore\content\StandardBlog\Tags\CMS.item.xml" />
+    <Content Include="items\master\sitecore\content\StandardPage\Home.item.xml" />
+    <Content Include="items\master\sitecore\content\StandardPage\Home.layout.xml" />
+    <Content Include="items\master\sitecore\layout\layouts\StandardBlog\AuthorLayout.item.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="items\master\sitecore\layout\layouts\StandardBlog\TagLayout.item.xml" />
+    <Content Include="items\master\sitecore\layout\layouts\StandardBlog\BlogPostLayout.item.xml" />
+    <Content Include="items\master\sitecore\layout\layouts\StandardBlog\BlogLayout.item.xml" />
+    <Content Include="items\master\sitecore\layout\layouts\StandardPage\StandardPageLayout.item.xml" />
+    <Content Include="items\master\sitecore\layout\Models\StandardBlog\AuthorLayoutViewModel.item.xml" />
+    <Content Include="items\master\sitecore\layout\Models\StandardBlog\TagLayoutViewModel.item.xml" />
+    <Content Include="items\master\sitecore\layout\Models\StandardBlog\BlogLayoutViewModel.item.xml" />
+    <Content Include="items\master\sitecore\layout\Models\StandardBlog\BlogListRenderingModel.item.xml" />
+    <Content Include="items\master\sitecore\layout\Models\StandardPage\PageBannerRenderingModel.item.xml" />
+    <Content Include="items\master\sitecore\layout\renderings\StandardBlog\BlogListRendering.item.xml" />
+    <Content Include="items\master\sitecore\layout\renderings\StandardPage\PageBannerRendering.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Author\Fields\ProfileImage.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Author\__Standard Values.layout.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Tag\__Standard Values.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Tag.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Author.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Author\Fields.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Author\Fields\FullName.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Author\Fields\Biography.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Author\Fields\TwitterHandle.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Author\__Standard Values.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\BlogPostComment.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\BlogPost.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Blog.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\BlogPostComment\Fields.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\BlogPostComment\Fields\CommentAuthor.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\BlogPostComment\Fields\CommentDate.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\BlogPostComment\Fields\CommentBody.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\BlogPostComment\__Standard Values.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\BlogPost\Fields.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\BlogPost\Fields\Tags.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\BlogPost\Fields\Abstract.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\BlogPost\Fields\Body.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\BlogPost\Fields\Author.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\BlogPost\Fields\PostDate.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\BlogPost\Fields\Title.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\BlogPost\__Standard Values.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\BlogPost\__Standard Values.layout.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Blog\Fields.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Blog\Fields\Subtitle.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Blog\Fields\Authors.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Blog\Fields\LogoImage.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Blog\Fields\Tags.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Blog\Fields\Title.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Blog\__Standard Values.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Blog\__Standard Values.layout.xml" />
+    <Content Include="items\master\sitecore\templates\StandardBlog\Tag\__Standard Values.layout.xml" />
+    <Content Include="items\master\sitecore\templates\StandardPage\StandardPage.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardPage\StandardPage\Fields.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardPage\StandardPage\Fields\Content.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardPage\StandardPage\Fields\Title.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardPage\StandardPage\__Standard Values.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardPage\StandardPage\__Standard Values.layout.xml" />
+    <Content Include="items\master\sitecore\templates\StandardPage\StandardSiteRoot.item.xml" />
+    <Content Include="items\master\sitecore\templates\StandardPage\StandardSiteRoot\__Standard Values.item.xml" />
+    <Content Include="ReadMe.txt" />
+    <Content Include="wwwroot\Areas\StandardBlog\Views\BlogPost\List.cshtml" />
+    <Content Include="wwwroot\Areas\StandardBlog\Views\BlogPost\ListItem.cshtml" />
+    <Content Include="wwwroot\Areas\StandardBlog\Views\BlogPost\Layout\Index.cshtml" />
+    <Content Include="items\master\sitecore\layout\Models\StandardBlog\BlogPostLayoutViewModel.item.xml" />
+    <Content Include="wwwroot\img\media\finger.jpg" />
+    <Content Include="wwwroot\css\icons.png" />
+    <Content Include="wwwroot\img\media\landscape.jpg" />
+    <Content Include="wwwroot\img\logo.png" />
+    <Content Include="wwwroot\js\modernizr-2.6.2.js" />
+    <Content Include="sitecore.filetemplates\t4\FakeDbFactory.cs.project.tt" />
+    <Content Include="sitecore.filetemplates\t4\NameFactory.cs.template.tt" />
+    <Content Include="sitecore.filetemplates\t4\NameFactoryTests.cs.template.tt" />
+    <Content Include="sitecore.filetemplates\t4\NameItem.cs.template.tt" />
+    <Content Include="sitecore.filetemplates\t4\TemplateIds.cs.project.tt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Areas\StandardBlog\Controllers\AuthorController.cs" />
+    <Compile Include="Areas\StandardBlog\Controllers\BlogController.cs" />
+    <Compile Include="Areas\StandardBlog\Controllers\BlogPostController.cs" />
+    <Compile Include="Areas\StandardBlog\Controllers\StandardController.cs" />
+    <Compile Include="Areas\StandardBlog\Controllers\TagController.cs" />
+    <Compile Include="Areas\StandardBlog\Controllers\TestController.cs" />
+    <Compile Include="Areas\StandardBlog\StandardBlogAreaRegistration.cs" />
+    <Compile Include="Areas\StandardPage\Controllers\PageController.cs" />
+    <Compile Include="Areas\StandardPage\Controllers\StandardController.cs" />
+    <Compile Include="Areas\StandardPage\Models\StandardPage.cs" />
+    <Compile Include="Areas\StandardPage\StandardPageAreaRegistration.cs" />
+    <Compile Include="Areas\StandardPage\ViewModels\Partial\BreadcrumbViewModel.cs" />
+    <Compile Include="Areas\StandardPage\ViewModels\Layout\StandardPageLayoutViewModel.cs" />
+    <Compile Include="Areas\StandardPage\ViewModels\Partial\PageBannerViewModel.cs" />
+    <Compile Include="Areas\StandardPage\ViewModels\Rendering\PageBannerRenderingModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="includes\readme.md" />
+    <Content Include="install-grunt.cmd" />
+    <Content Include="scconfig.json" />
+    <Content Include="sitecore.filetemplates\Rendering.cshtml" />
+    <Content Include="wwwroot\css\Main.css" />
+    <Content Include="wwwroot\css\Site.css" />
+    <Content Include="wwwroot\readme.md" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="web.config" />
+    <Content Include="items\master\readme.md" />
+    <Content Include="items\master\sitecore\layout\layouts\readme.md" />
+    <Content Include="items\master\sitecore\layout\renderings\readme.md" />
+    <Content Include="items\master\sitecore\media library\readme.md" />
+    <Content Include="items\master\sitecore\system\readme.md" />
+    <Content Include="items\master\sitecore\templates\readme.md" />
+    <Content Include="items\readme.md" />
+    <Content Include="packages.config" />
+    <Content Include="wwwroot\views\Shared\_Layout.cshtml" />
+    <Content Include="wwwroot\views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="wwwroot\Areas\StandardBlog\Views\web.config" />
+    <Content Include="wwwroot\Areas\StandardBlog\Views\_ViewStart.cshtml" />
+    <Content Include="wwwroot\Areas\StandardBlog\Views\Blog\Layout\Index.cshtml" />
+    <Content Include="wwwroot\Areas\StandardPage\Views\web.config" />
+    <Content Include="items\master\sitecore\layout\Models\StandardPage\StandardPageLayoutViewModel.item.xml" />
+    <Content Include="includes\Sitecore.StandardPage.Website.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <Content Include="wwwroot\Areas\StandardPage\Views\Page\Layout\Index.cshtml" />
+    <Content Include="wwwroot\Areas\StandardPage\Views\Shared\BreadcrumbHome.cshtml" />
+    <Content Include="wwwroot\Areas\StandardBlog\Views\Blog\Rendering\List.cshtml" />
+    <Content Include="wwwroot\Areas\StandardBlog\Views\Blog\List.cshtml" />
+    <Content Include="wwwroot\views\Shared\Breadcrumb.cshtml" />
+    <Content Include="wwwroot\Areas\StandardBlog\Views\Shared\BreadcrumbHome.cshtml" />
+    <None Include="wwwroot\App_config\Include\Sitecore.StandardPage.Website.config.disabled" />
+    <Content Include="wwwroot\Areas\StandardPage\Views\Page\PageBanner.cshtml" />
+    <Content Include="wwwroot\Areas\StandardPage\Views\Page\Rendering\PageBanner.cshtml" />
+    <Content Include="wwwroot\views\Shared\FooterLinks.cshtml" />
+    <Content Include="wwwroot\views\Shared\BurgerMenu.cshtml" />
+    <Content Include="wwwroot\Areas\StandardBlog\Views\Shared\SideMenu.cshtml" />
+    <Content Include="wwwroot\Areas\StandardBlog\Views\Author\Layout\Index.cshtml" />
+    <Content Include="wwwroot\Areas\StandardBlog\Views\Tag\Layout\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sitecore.StandardBlog.Kernel\Sitecore.StandardBlog.Kernel.csproj">
+      <Project>{bbd3a7eb-74a5-4c30-ac3e-2525146ff321}</Project>
+      <Name>Sitecore.StandardBlog.Kernel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55566</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55534/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

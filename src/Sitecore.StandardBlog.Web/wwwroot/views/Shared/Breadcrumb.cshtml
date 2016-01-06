@@ -1,0 +1,8 @@
+﻿@model Sitecore.StandardBlog.Web.Areas.StandardPage.ViewModels.Partial.BreadcrumbViewModel
+
+<ul class="breadcrumbs">
+    @foreach (Tuple<string, string> breadcrumb in Model.ViewData)
+    {
+        <li><a href="@Html.AttributeEncode(breadcrumb.Item1)">@Html.Raw(breadcrumb.Item2)</a></li>
+    }
+</ul>

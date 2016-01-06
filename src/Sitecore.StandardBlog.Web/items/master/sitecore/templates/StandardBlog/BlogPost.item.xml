@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Item xmlns="http://www.sitecore.net/pathfinder/item"
+    Template="/sitecore/templates/System/Templates/Template"
+      Id="{A0EA7963-9194-4367-A20A-F3B629035424}">
+  <Fields>
+    <Field Name="__Base template">
+      {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    </Field>
+    <Field Name="__Icon">
+      People/16x16/book_blue.png
+    </Field>
+    <Field Name="__Sortorder">
+      100
+    </Field>
+    <Field Name="__Standard Values">
+      {67AA32BF-CBC0-481D-876A-1F726B1120E3}
+    </Field>
+  </Fields>
+</Item>
+
+
+<!--<Template xmlns="http://www.sitecore.net/pathfinder/item"
+  Id="{A0EA7963-9194-4367-A20A-F3B629035424}"
+  ShortHelp="Blog Post Item."
+  LongHelp="Blog Post Item."
+  Icon="People/16x16/book_blue.png">
+  <Section Name="Fields">
+    <Field Id="{14BF117B-97EB-4E1C-8BEE-C63065ADEF27}" Name="Title" ShortHelp="Blog post title." LongHelp="Blog post title." Type="Single-Line Text" />
+    <Field Name="PostDate" Id="{AF42D8F2-A9D7-42F3-9784-55C6FE89285C}" ShortHelp="Blog post date." LongHelp="Blog post date." Type="Datetime" />
+    <Field Name="Author" Id="{81655FA5-9865-4B04-86FD-A3CBE0E92C3E}" ShortHelp="Blog post author." LongHelp="Blog post author." Type="Droplink" Source="{63F0399B-FF26-41E2-822A-C32D48931B25}" />
+    <Field Name="Tags" Id="{AE024939-93F9-41E3-B901-31CBA398C786}" ShortHelp="Blog post tags." LongHelp="Blog post tags." Type="Multilist" Source="{B175C1C2-B8CA-4E39-97C6-8198816D21E2}" />
+    <Field Name="Abstract" Id="{DE8D9062-6EEB-45D2-A834-F80B5F663967}" ShortHelp="Blog post abstract." LongHelp="Blog post abstract." Type="Rich Text" />
+    <Field Name="Body" Id="{A649DB88-517E-43D0-9017-F18D150AB5F2}" ShortHelp="Blog post body content." LongHelp="Blog post body content." Type="Rich Text" />
+  </Section>
+</Template>-->

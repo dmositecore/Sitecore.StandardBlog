@@ -1,0 +1,10 @@
+﻿@model Sitecore.StandardBlog.Web.Areas.StandardPage.ViewModels.Partial.PageBannerViewModel
+<section class="home-search banner" my-is-home-page>
+    <div class="bg"></div>
+    <div class="home-search-inner banner-inner arrow-left">
+        <div class="banner-content">
+            <h1 class="main-title promo-text">@Html.Raw(Model.ViewData.Title)</h1>
+            <p class="promo-text">@Html.Raw(Model.ViewData.Content)</p>
+        </div>
+    </div>
+</section>
